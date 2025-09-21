@@ -1,0 +1,65 @@
+#body {
+  background-color: #333;
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(loginimg1.avif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.container {
+ 
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width:200PX;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.button-container button {
+  width: 35%;
+}
+
+.icon {
+  margin-right: 10px;
+}
