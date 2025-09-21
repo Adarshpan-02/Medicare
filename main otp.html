@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare</title>
+    <style>
+    
+           .body{
+            background-image:url(otpimg.jpg);
+            
+            background-repeat: no-repeat;
+           }  
+
+
+        
+        .container{
+            height: 300px;
+            width: 300px;
+            color: #4cd137;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            background-color: #2f3640;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100PX;
+        }
+        input{
+            width: 30px;
+            height:30px;
+            margin: 10px 5px;
+            font-size: 20px;
+            outline:none;
+            border: 1px solid white;
+            border-radius:5px;
+            text-align: center;
+            color:#4cd137;
+            background:transparent;
+        }
+        .verify{
+            height: 40px;
+            width: 100px;
+           
+            border-radius: 25px;  
+            border: 5px solid #4cd137 ;
+            
+            background: #2f3640;
+            color:#4cd137;
+            margin-top: 20px;
+        }
+         
+      
+    </style>
+    <script>
+        
+        let input = [...document.querySelectorAll('input')];
+        console.log(input)
+        input.forEach(element =>{
+            element.addEventListener('keyup', ()=>{
+                if(input.indexof(element)+1 != input.length)
+                input[input.indexof(element)+1].focus()})
+            
+            
+            });
+        
+     </script>
+</head>
+<body class="body">
+    
+    
+      <center>
+    <div class="container">
+         <h1>OTP  VERFICATION</h1>
+        <div class="inp">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+ </div>
+ <p> Don't get the code?
+    <a href="" style="color:white;">Resend</a>
+
+ </p>
+ 
+    <a href="index.html">
+        <button class="verify"> Verify</button>
+    </a>
+
+    </div>
+</center>
+ 
+</body>
+</html>
